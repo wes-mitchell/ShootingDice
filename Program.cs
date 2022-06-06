@@ -22,6 +22,10 @@ namespace ShootingDice
             {
               Name = "Andrew",  
             };
+            HumanPlayer john = new HumanPlayer()
+            {
+                Name = "John"
+            };
             
 
             Player player1 = new Player();
@@ -29,7 +33,9 @@ namespace ShootingDice
 
             // tory.TauntPlay(vish);
 
-            andrew.Play(vish);
+            // andrew.Play(vish);
+
+            john.Play(player1);
 
             Player player2 = new Player();
             player2.Name = "Sue";
