@@ -26,6 +26,10 @@ namespace ShootingDice
             {
                 Name = "John"
             };
+            CreativeSmackTalkingPlayer joe = new CreativeSmackTalkingPlayer()
+            {
+                Name = "Joe Blow"
+            };
             
 
             Player player1 = new Player();
@@ -35,7 +39,9 @@ namespace ShootingDice
 
             // andrew.Play(vish);
 
-            john.Play(player1);
+            // john.Play(player1);
+
+            joe.Play(player1);
 
             Player player2 = new Player();
             player2.Name = "Sue";
