@@ -30,18 +30,20 @@ namespace ShootingDice
             {
                 Name = "Joe Blow"
             };
-            
+            SoreLoserPlayer raph = new SoreLoserPlayer()
+            {
+                Name = "Raph"
+            };
+        
 
             Player player1 = new Player();
             player1.Name = "Bob";
 
             // tory.TauntPlay(vish);
-
             // andrew.Play(vish);
-
-            // john.Play(player1);
-
-            joe.Play(player1);
+            john.Play(player1);
+            // joe.Play(player1);
+            // raph.Play(player1);
 
             Player player2 = new Player();
             player2.Name = "Sue";
