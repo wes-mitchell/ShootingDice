@@ -11,12 +11,22 @@ namespace ShootingDice
         {
             Console.Write("Choose a number between 1 and 6: ");
             int userRoll = int.Parse(Console.ReadLine());
-            while (userRoll < 1 || userRoll > 6) {
+            try
+            {
+                while (userRoll < 1 || userRoll > 6) {
+                Console.WriteLine("Nah doggy, try again.");
+                Console.Write("Choose a number between 1 and 6: ");
+                userRoll = int.Parse(Console.ReadLine());
+                }
+            }
+            catch (System.FormatException) 
+            {
+                Console.WriteLine("Nah doggy, try again.");
                 Console.WriteLine("Nah doggy, try again.");
                 Console.Write("Choose a number between 1 and 6: ");
                 userRoll = int.Parse(Console.ReadLine());
             }
-            
+
             // Call roll for "this" object and for the "other" object
             int myRoll = userRoll;
             int otherRoll = other.Roll();
