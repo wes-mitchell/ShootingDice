@@ -34,6 +34,12 @@ namespace ShootingDice
             {
                 Name = "Raph"
             };
+            UpperHalfPlayer bozno = new UpperHalfPlayer()
+            {
+                Name = "Bonzo"
+            };
+
+            
         
 
             Player player1 = new Player();
@@ -43,7 +49,8 @@ namespace ShootingDice
             // andrew.Play(vish);
             // john.Play(player1);
             // joe.Play(player1);
-            raph.Play(player1);
+            // raph.Play(player1);
+            bozno.Play(player1);
 
             Player player2 = new Player();
             player2.Name = "Sue";
