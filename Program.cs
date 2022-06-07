@@ -53,9 +53,9 @@ namespace ShootingDice
             // andrew.Play(vish);
             // john.Play(player1);
             // joe.Play(player1);
-            // raph.Play(player1);
+            raph.Play(player1);
             // bonzo.Play(player1);
-            annie.Play(player1);
+            // annie.Play(player1);
 
             Player player2 = new Player();
             player2.Name = "Sue";

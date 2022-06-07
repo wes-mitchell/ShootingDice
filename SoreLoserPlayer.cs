@@ -29,6 +29,9 @@ namespace ShootingDice
       }
       catch
       {
+        myRoll = 6;
+        otherRoll--;
+        Console.WriteLine($"I see {Name}: {myRoll} and {other.Name}: {otherRoll}.");
         Console.WriteLine($"No matter what the dice say, {Name} always wins. Try again sometime though.");
       }
     }
